@@ -1,0 +1,50 @@
+.containerApp {
+    background-color: #E5E5E5;
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 248px;
+    margin-left: 21px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+h1,
+h2 {
+    font-family: 'Righteous', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    width: 226px;
+}
+
+h1,
+header p {
+    color: #FFFFFF;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 54px;
+}
+
+header p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
