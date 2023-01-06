@@ -24,9 +24,7 @@ header {
 
 .cabecalho {
     width: 248px;
-    margin-left: 21px;
-    margin-top: 8px;
-    margin-bottom: 18px;
+    margin: 8px 0px 18px 21px;
 }
 
 h1,
@@ -71,8 +69,6 @@ h2 {
     font-weight: 400;
     font-size: 26px;
     line-height: 32px;
-
-    margin-left: 19px;
-    margin-bottom: 17px;
+    margin: 0px 0px 17px 19px;
 
 }
