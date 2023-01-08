@@ -141,7 +141,31 @@ footer {
     width: 100%;
     height: 92px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: fixed;
     bottom: 0;
     z-index: 1;
+    align-items: center;
+}
+
+button {
+    background-color: #CBCBCB;
+    width: 80%;
+    height: 61px;
+    border-radius: 50px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 23px;
 }
