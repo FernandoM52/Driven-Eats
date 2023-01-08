@@ -148,12 +148,11 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: 1;
-    align-items: center;
 }
 
 button {
     background-color: #CBCBCB;
-    width: 80%;
+    width: 364px;
     height: 61px;
     border-radius: 50px;
     border: none;
