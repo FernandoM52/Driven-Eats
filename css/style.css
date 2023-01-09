@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -106,6 +107,8 @@ h2 {
     justify-content: space-around;
 
     position: relative;
+
+    border: solid 4px transparent;
 }
 
 img {
@@ -143,17 +146,6 @@ p {
     line-height: 18px;
 }
 
-
-
-ion-icon {
-    font-size: 19px;
-    color: #32B72F;
-    position: absolute;
-    bottom: 7px;
-    right: 7px;
-}
-
-
 footer {
     background-color: #FFFFFF;
     width: 100%;
@@ -185,4 +177,17 @@ button {
     font-size: 20px;
     font-weight: 400px;
     line-height: 23px;
+}
+
+.bordaSelecionado {
+    border: 4px solid #32B72F;
+}
+
+.check-icon {
+    display: none;
+    font-size: 19px;
+    color: #32B72F;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
 }

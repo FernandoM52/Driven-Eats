@@ -35,34 +35,35 @@
 		<main>
 			<h2>Primeiro, seu prato</h2>
 			<!--Formatação da seleção de prato-->
-			<div class="container-selecao">
-				<div data-test="dish" class="selecao" onclick="Selecionado()">
+			<div class="container-selecao pratos">
+				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this))">
 					<img src="./imgs/pratos/frango_yin_yang.jpg" />
 					<h3>Frango Yin Yang</h3>
 					<p>Um pouco de batata,<br>um pouco de salada</p>
 					<p class="preco">R$ 12,90</p>
-					<ion-icon name="checkmark-circle"></ion-icon>
-
+					<ion-icon name="checkmark-circle" class="check-icon"></ion-icon>
 				</div>
 
-				<div data-test="dish" class="selecao">
+				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this))">
 					<img src="./imgs/pratos/tropeirao.jpg" />
 					<h3>Tropeiro</h3>
 					<p>Tropeiro clássico com<br>2 ovos</p>
 					<p class="preco">R$ 14,90</p>
+					<ion-icon name="checkmark-circle" class="check-icon"></ion-icon>
 				</div>
 
-				<div data-test="dish" class="selecao">
+				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this))">
 					<img src="./imgs/pratos/feijoada.jpg" />
 					<h3>Feijoada</h3>
 					<p>Feijoada simples com <br>1 ovo</p>
 					<p class="preco">R$ 13,90</p>
+					<ion-icon name="checkmark-circle" class="check-icon"></ion-icon>
 				</div>
 			</div>
 
 			<!--Formatação da seleção de bebida-->
 			<h2>Agora, sua bebida</h2>
-			<div class="container-selecao">
+			<div class="container-selecao bebidas">
 				<div data-test="drink" class="selecao">
 					<img src="./imgs/bebidas/suco-laranja.jpg" />
 					<h3>Suco de laranja</h3>
@@ -87,7 +88,7 @@
 
 			<!--Formatação da seleção de sobremesa-->
 			<h2>Por fim, sua sobremesa</h2>
-			<div class="container-selecao">
+			<div class="container-selecao sobremesas">
 				<div data-test="dessert" class="selecao">
 					<img src="./imgs/sobremesas/pudim.jpg" />
 					<h3>Pudim</h3>
