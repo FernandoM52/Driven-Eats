@@ -36,27 +36,27 @@
 			<h2>Primeiro, seu prato</h2>
 			<!--Formatação da seleção de prato-->
 			<div class="container-selecao pratos">
-				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this, 'pratos'))">
 					<img src="./imgs/pratos/frango_yin_yang.jpg" />
 					<h3 data-test="item-name">Frango Yin Yang</h3>
 					<p>Um pouco de batata,<br>um pouco de salada</p>
-					<p class="preco">R$ 12,90</p>
+					<p data-test="item-price" class="preco">R$ 12,90</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 
-				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this, 'pratos'))">
 					<img src="./imgs/pratos/tropeirao.jpg" />
 					<h3 data-test="item-name">Tropeiro</h3>
 					<p>Tropeiro clássico com<br>2 ovos</p>
-					<p class="preco">R$ 14,90</p>
+					<p data-test="item-price" class="preco">R$ 14,90</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 
-				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="dish" class="selecao" onclick="(selecionarPrato(this, 'pratos'))">
 					<img src="./imgs/pratos/feijoada.jpg" />
 					<h3 data-test="item-name">Feijoada</h3>
 					<p>Feijoada simples com <br>1 ovo</p>
-					<p class="preco">R$ 13,90</p>
+					<p data-test="item-price" class="preco">R$ 13,90</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 			</div>
@@ -64,27 +64,27 @@
 			<!--Formatação da seleção de bebida-->
 			<h2>Agora, sua bebida</h2>
 			<div class="container-selecao bebidas">
-				<div data-test="drink" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="drink" class="selecao" onclick="(selecionarPrato(this, 'bebidas'))">
 					<img src="./imgs/bebidas/suco-laranja.jpg" />
 					<h3 data-test="item-name">Suco de laranja</h3>
 					<p>Suco natural 500ml</p>
-					<p class="preco">R$ 5,90</p>
+					<p data-test="item-price" class="preco">R$ 5,90</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 
-				<div data-test="drink" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="drink" class="selecao" onclick="(selecionarPrato(this, 'bebidas'))">
 					<img src="./imgs/bebidas/cha.jpg" />
 					<h3 data-test="item-name">Chá</h3>
 					<p>Matte Leão 300ml</p>
-					<p class="preco">R$ 4,90</p>
+					<p data-test="item-price" class="preco">R$ 4,90</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 
-				<div data-test="drink" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="drink" class="selecao" onclick="(selecionarPrato(this, 'bebidas'))">
 					<img src="./imgs/bebidas/coca-cola.jpg" />
 					<h3 data-test="item-name">Coca-cola</h3>
 					<p>Coca lata 500ml</p>
-					<p class="preco">R$ 6,90</p>
+					<p data-test="item-price" class="preco">R$ 6,90</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 			</div>
@@ -92,27 +92,27 @@
 			<!--Formatação da seleção de sobremesa-->
 			<h2>Por fim, sua sobremesa</h2>
 			<div class="container-selecao sobremesas">
-				<div data-test="dessert" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="dessert" class="selecao" onclick="(selecionarPrato(this, 'sobremesas'))">
 					<img src="./imgs/sobremesas/pudim.jpg" />
 					<h3 data-test="item-name">Pudim</h3>
 					<p>Leite condensado</p>
-					<p class="preco">R$ 4,50</p>
+					<p data-test="item-price" class="preco">R$ 4,50</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 
-				<div data-test="dessert" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="dessert" class="selecao" onclick="(selecionarPrato(this, 'sobremesas'))">
 					<img src="./imgs/sobremesas/bolo-pote.jpg" />
 					<h3 data-test="item-name">Bolo de pote</h3>
 					<p>Chocolate com ninho</p>
-					<p class="preco">R$ 8,00</p>
+					<p data-test="item-price" class="preco">R$ 8,00</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 
-				<div data-test="dessert" class="selecao" onclick="(selecionarPrato(this))">
+				<div data-test="dessert" class="selecao" onclick="(selecionarPrato(this, 'sobremesas'))">
 					<img src="./imgs/sobremesas/doce-leite.jpg" />
 					<h3 data-test="item-name">Doce de leite</h3>
 					<p>3 unidades</p>
-					<p class="preco">R$ 3,00</p>
+					<p data-test="item-price" class="preco">R$ 3,00</p>
 					<ion-icon class="check-icon check-none" name="checkmark-circle"></ion-icon>
 				</div>
 			</div>
