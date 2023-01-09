@@ -11,10 +11,11 @@ function selecionarPrato(itemSelecionado, tipo) {
     itemSelecionado.classList.add("ativo");
     itemSelecionado.classList.add("bordaSelecionado");
 
-    //função valida botao de fechar pedido
+
     habilitaBotaoFecharPedido();
 }
 
+//função que habilitae altera o botao de fechar pedido
 function habilitaBotaoFecharPedido() {
     const botao = document.querySelector('footer .botao');
     if (document.querySelectorAll('.ativo').length === 3) {
@@ -24,3 +25,9 @@ function habilitaBotaoFecharPedido() {
     }
 }
 
+
+//função da mensagem do wpp
+function fecharPedido() {
+
+    let link = "https://wa.me/5531988262221?text=urlencodedtext";
+}
