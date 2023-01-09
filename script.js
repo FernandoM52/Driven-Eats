@@ -1,12 +1,12 @@
 function selecionarPrato(pratoSelecionado) {
-
-    const verificaPratoSelecionado = document.querySelector('.pratos .bordaSelecionado');
-    console.log(verificaPratoSelecionado);
-
-    if (verificaPratoSelecionado !== null) {
-        verificaPratoSelecionado.classList.remove('bordaSelecionado');
+    const validarPratoSelecionado = document.querySelector(".ativo");
+    //verificar se ja tem algum prato selecionado
+    if (validarPratoSelecionado !== null) {
+        validarPratoSelecionado.classList.remove("ativo")
+        validarPratoSelecionado.classList.remove("bordaSelecionado");
     }
 
-    pratoSelecionado.classList.add('bordaSelecionado');
-
+    //inserir borda e checl ao clicar no prato
+    pratoSelecionado.classList.add("ativo");
+    pratoSelecionado.classList.add("bordaSelecionado");
 }
