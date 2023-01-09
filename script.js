@@ -17,17 +17,21 @@ function selecionarPrato(itemSelecionado, tipo) {
 
 //função que habilitae altera o botao de fechar pedido
 function habilitaBotaoFecharPedido() {
-    const botao = document.querySelector('footer .botao');
+    const habilitarBotao = document.querySelector('.botao')
+
     if (document.querySelectorAll('.ativo').length === 3) {
-        botao.disabled = false;
-        botao.classList.add('botaoHabilitado');
-        botao.innerHTML = "Fechar pedido";
+        habilitarBotao.removeAttribute('disabled');
+        habilitarBotao.classList.add('botaoHabilitado');
+        habilitarBotao.innerHTML = "Fechar pedido";
     }
 }
 
 
 //função da mensagem do wpp
 function fecharPedido() {
+    let mensagem = "Olá, gostaria de fazer o pedido:\n"
+    mensagem += "-Prato: "
 
     let link = "https://wa.me/5531988262221?text=urlencodedtext";
 }
+
