@@ -30,16 +30,22 @@ function habilitaBotaoFecharPedido() {
 
 
 //função da mensagem do wpp
-function fecharPedido(intemSelecionado) {
-    
-    let mensagem = "Olá, gostaria de fazer o pedido:\n"
-    mensagem += "-Prato: " + itemSelecionado.getElementByClassName(h3)[0].innerHTML + "\n"
-    mensagem += "-Bebida: " + itemSelecionado.getElementByClassName(h3)[0].innerHTML + "\n"
-    mensagem += "-Sobremesa: " + itemSelecionado.getElementByClassName(h3)[0].innerHTML + "\n"
+function fecharPedido(itemSelecionado) {
+    const prato = document.querySelector('.prato');
+    const bebida = document.querySelector('.bebida');
+    const sobremesa = document.querySelector('.sobremesa');
 
-    let comidaPreco = Number(itemSelecionado.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
-    let bebidaPreco = Number(itemSelecionado.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
-    let sobremesaPreco = Number(itemSelecionado.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
+
+
+
+    let mensagem = "Olá, gostaria de fazer o pedido:\n"
+    mensagem += "-Prato: " + prato.getElementByClassName("teste")[0].innerHTML + "\n"
+    mensagem += "-Bebida: " + bebida.getElementByClassName("teste")[0].innerHTML + "\n"
+    mensagem += "-Sobremesa: " + sobremesa.getElementByClassName("teste")[0].innerHTML + "\n"
+
+    let comidaPreco = Number(prato.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
+    let bebidaPreco = Number(bebida.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
+    let sobremesaPreco = Number(sobremesa.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
     let precoTotal = comidaPreco + bebidaPreco + sobremesaPreco;
 
     mensagem += "Total: R$ " + precoTotal.toFixed(2);
