@@ -1,10 +1,12 @@
 function selecionarPrato(itemSelecionado, tipo) {
-    const validarPratoSelecionado = document.querySelector(`.${tipo} .ativo`);
+    console.log(itemSelecionado, tipo);
+
+    const validarItemSelecionado = document.querySelector(`.${tipo} .ativo`);
 
     //verificar se ja tem algum item selecionado
-    if (validarPratoSelecionado !== null) {
-        validarPratoSelecionado.classList.remove("ativo")
-        validarPratoSelecionado.classList.remove("bordaSelecionado");
+    if (validarItemSelecionado !== null) {
+        validarItemSelecionado.classList.remove("ativo")
+        validarItemSelecionado.classList.remove("bordaSelecionado");
     }
 
     //inserir borda e check ao clicar no item
@@ -28,10 +30,23 @@ function habilitaBotaoFecharPedido() {
 
 
 //função da mensagem do wpp
-function fecharPedido() {
+function fecharPedido(intemSelecionado) {
+    
     let mensagem = "Olá, gostaria de fazer o pedido:\n"
-    mensagem += "-Prato: "
+    mensagem += "-Prato: " + itemSelecionado.getElementByClassName(h3)[0].innerHTML + "\n"
+    mensagem += "-Bebida: " + itemSelecionado.getElementByClassName(h3)[0].innerHTML + "\n"
+    mensagem += "-Sobremesa: " + itemSelecionado.getElementByClassName(h3)[0].innerHTML + "\n"
 
-    let link = "https://wa.me/5531988262221?text=urlencodedtext";
+    let comidaPreco = Number(itemSelecionado.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
+    let bebidaPreco = Number(itemSelecionado.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
+    let sobremesaPreco = Number(itemSelecionado.getElementByClassName("preco")[0].children[0].innerHTML.replace('R$', '').replace(",", ","));
+    let precoTotal = comidaPreco + bebidaPreco + sobremesaPreco;
+
+    mensagem += "Total: R$ " + precoTotal.toFixed(2);
+
+    let mensagemFormatada = encodeURIComponent(mensagem);
+
+    const url = "https://wa.me/?text=" + mensagemFormatada;
+    window.open(url);
 }
 
